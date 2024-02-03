@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+
+<!--使わないと言われたが一応残す　メールフォームパターン-->
+
+
+<html lang=ja>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>湯沢北整骨院　お問い合わせページ</title>
+    <link rel="stylesheet" href="style.css" media="screen and (max-width:767px)">
+    <link rel="stylesheet" href="large.css" media="screen and (min-width:768px)">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome-animation/0.0.10/font-awesome-animation.css" type="text/css" media="all" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sawarabi+Gothic&family=Yuji+Mai&display=swap" rel="stylesheet">
+  </head>
+  <body>
+
+<!-- 全画面共通　ヘッダー　-->
+
+    <header class="header-container">
+
+        <div class="header-logo-wrap">
+        <img src="img20.jpg" alt="湯沢北整骨院" class="logo-img">
+        </div>
+
+        <div class="header-contact-wrap">
+
+         <div class="header-tel-wrap">
+           <a href="tel:0182238104"><img src="img27.jpg" class="header-contact-img"></a>
+         </div>
+
+         <div class="header-mail-wrap">
+           <a href="conect.html"><img src="img28.jpg" class="header-contact-img"></a>
+         </div>
+
+       </div><!--header-contact-wrap-->
+
+       <p class="header-line"></p>
+
+    </header>
+
+
+    <!--ナビゲーション-->
+
+    <section class="top-nav">
+
+     <ul class="top-nav-ul">
+
+       <li class="top-nav-list"><a href="home.html" class="top-nav-link">HOME</a></li>
+
+       <li class="top-nav-list list-type1">
+         <a class="top-nav-accordion js-nav-accordion" href="">自費メニュー</a>
+          <ul class="nav-submenu">
+            <li class="nav-submenu-list"><a href="seitai.html" class="nav-sub-link">整体施術</a></li>
+            <li class="nav-submenu-list"><a href="https://www.whitening.best/lp/yuzawakita_seikotsuin/" class="nav-sub-link">セルフホワイトニング</a></li>
+            <li class="nav-submenu-list"><a href="insole.html" class="nav-sub-link">セミオーダーインソール</a></li>
+          </ul><!--nav-submenu-->
+       </li>
+
+       <li class="top-nav-list"><a href="introduction.html" class="top-nav-link">店舗紹介</a></li>
+
+       <li class="top-nav-list"><a href="conect.html" class="top-nav-link">お問い合わせ</a></li>
+
+       <li class="top-nav-list"><a href="Q&A.html" class="top-nav-link">よくある質問</a></li>
+
+     </ul><!--top-nav-ul-->
+
+     <button type="button" class="menu-button js-button">
+       <span class="button-line line1"></span>
+       <span class="button-line line2"></span>
+       <span class="button-line line3"></span>
+     </button>
+
+   </section><!--top-nav-->
+
+<!--ここまで-->
+    <section class="conect-tel-wrap">
+
+      <div class="conect-tel-title-box">
+        <p class="conect-tel-title">電話でのお問い合わせについて</p>
+      </div>
+
+      <div class="conect-link-box">
+        <a href="tel:0182238104">
+          <div class="conect-link-icon-box">
+            <i class="fas fa-phone faa-ring animated"></i>
+          </div>
+          <div class="conect-link-about-box">
+           <p class="conect-tel-link">ボタンタップでお問い合わせスタート</p>
+           <p class="conect-tel-link">0182-23-8104</p>
+          </div>
+        </a>
+      </div><!--conect-link-box-->
+
+      <div class="tel-cation-box">
+        <p class="tel-cation-text">施術中は電話に出られない場合がございます。予めご了承ください。</p>
+      </div>
+
+    </section><!--conect-tel-wrap-->
+
+    <section class="conect-mail-wrap">
+
+      <div class="mail-title-box">
+        <p class="content-mail-title">メールでのお問い合わせ</p>
+      </div>
+
+     <div class="mail-about-box">
+       <p class="mail-about-txt">自費施術のご予約はメールでも受付可能です</p>
+       <p class="mail-about-txt">ご予約以外もお気軽にお問い合わせ下さい</p>
+     </div>
+
+     <div class="conect-mail-form">
+
+       <div class="form-group-title-box">
+        <span>湯沢北整骨院<br>お問い合わせフォーム</span>
+       </div>
+
+       <form>
+
+         <div class="form-group-box">
+          <div class="form-label form-name">名前
+           <span class="form-need-txt">※必須</span>
+          </div>
+           <input type="text" name="name" class="valid-name">
+         </div>
+
+         <div class="form-group-box">
+          <div class="form-label form-name">フリガナ
+           <span class="form-need-txt">※必須</span>
+          </div>
+           <input type="text" name="kana" class="valid-kana" pattern="[ァ-ヴー\s　]+">
+         </div>
+
+         <div class="form-group-box">
+          <div class="form-label form-email">E-mail
+           <span class="form-need-txt">※必須</span>
+          </div>
+           <input type="email" name="email" class="valid-email" placeholder="tiger@gmail.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required>
+         </div>
+
+         <div class="form-group-box">
+          <div class="form-label form-tel">電話番号</div>
+           <input type="tel" name="tel" class="valid-tel" placeholder="012-3456-7890" pattern="\d{2,4}-?\d{3,4}-?\d{3,4}" required>
+         </div>
+
+         <div class="form-group-box">
+          <div class="form-label form-checkbox">お問い合わせ種類
+            <span class="form-need-txt">※選択して下さい</span>
+            <span class="help-block"></span>
+          </div>
+
+          <div class="form-check-box check-box1">
+           <input type="checkbox" name="checkbox" class="valid-checkbox" value="施術予約について" id="apo" required>
+           <label for="apo">施術予約について</label>
+          </div>
+          <div class="form-check-box">
+           <input type="checkbox" name="checkbox" class="valid-checkbox" value="往診について" id="visit">
+           <label for="visit">往診について</label>
+         </div>
+         <div class="form-check-box">
+           <input type="checkbox" name="checkbox" class="valid-checkbox" value="症状のご相談" id="consultation">
+           <label for="consultation">症状のご相談</label>
+         </div>
+         <div class="form-check-box">
+           <input type="checkbox" name="checkbox" class="valid-checkbox" value="その他" id="athers">
+           <label for="athers">その他</label>
+         </div>
+         </div><!--form-group-box-->
+
+         <div class="form-group-box">
+          <div class="form-label form-about">内容:
+            <span class="form-need-txt">※必須</span>
+            <span class="help-block"></span>
+          </div>
+            <textarea name="name" rows="10" cols="30" type="text" placeholder="ここにお問い合わせ内容を入力して下さい" id="count-textarea" class="valid-textarea"></textarea>
+
+          <div class="form-bottom-wrap">
+
+            <div class="text-count-box">
+             <span class="text-counter">0</span>/300
+            </div>
+
+            <div class="form-submit-box">
+              <input type="submit" value="送信">
+            </div>
+
+          </div><!--form-bottom-wrap-->
+
+          </div><!--form-group-box-->
+
+     </form>
+    </div><!--conect-mail-form-->
+
+   </section><!--conect-mail-wrap-->
+
+
+    <!-- 全画面共通フッター -->
+        <footer class="footer-container">
+
+          <div class="footer-title">
+            <p>- 店舗概要 -</p>
+          </div>
+
+          <div class="footer-about-box">
+
+            <div class="footer-left-wrap">
+
+              <table class="opentime">
+                <caption class="time-guid">受付時間のご案内（日・祝休診）</caption>
+                <thead class="time-head">
+                  <tr>
+                    <th>時間</th><td>月</td><td>火</td><td>水</td><td>木</td><td>金</td><td>土</td>
+                  </tr>
+                </thead>
+                <tbody class="time-body">
+                  <tr>
+                    <th>午前<br>8:30〜13:00</th><td>●</td><td>●</td><td>●</td><td>●</td><td>●</td><td>8:30<br>〜13:30</td>
+                  </tr>
+                  <tr>
+                    <th>午後<br>15:00〜20:30</th><td>●</td><td>●</td><td>●</td><td>-</td><td>●</td><td>-</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div><!--footer-left-wrap-->
+
+            <div class="footer-right-wrap">
+              <div class="footer-text-r">
+
+                <p>各種保険・労災・自賠責取り扱っております</p>
+                <p>時間外・往診承ります</p>
+                <p class="footer-adress">〒019-0524 秋田県横手市十文字町本町22-8</p>
+                <p class="footer-tel">TEL　0182-23-8104</p>
+
+                <div class="footer-txt-r-1">
+                 <p>湯沢北整骨院</p>
+                 <p clss="footer-txt-name">院長　渡 部　涼 平</p>
+                </div>
+
+              </div><!--footer-text-r-->
+            </div><!--footer-right-wrap-->
+
+          </div><!--footer-container-->
+
+          <div class="copyright">
+            <p class="copyright-txt">Copyright©️ 2021 湯沢北整骨院 All right reserved</p>
+          </div>
+
+        </footer>
+
+        <script src="https://unpkg.com/scroll-hint@latest/js/scroll-hint.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script src="nabe.js"></script>
+      </body>
+    </html>
